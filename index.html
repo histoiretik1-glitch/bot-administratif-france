@@ -208,11 +208,11 @@
 </header>
 
 <div class="lang-bar">
-  <button class="lang-btn active" onclick="setLang('fr')">🇫🇷 Français</button>
-  <button class="lang-btn" onclick="setLang('en')">🇬🇧 English</button>
-  <button class="lang-btn" onclick="setLang('ar')">🇩🇿 العربية</button>
-  <button class="lang-btn" onclick="setLang('es')">🇪🇸 Español</button>
-  <button class="lang-btn" onclick="setLang('pt')">🇵🇹 Português</button>
+  <button class="lang-btn active" onclick="setLang('fr', event)">🇫🇷 Français</button>
+  <button class="lang-btn" onclick="setLang('en', event)">🇬🇧 English</button>
+  <button class="lang-btn" onclick="setLang('ar', event)">🇩🇿 العربية</button>
+  <button class="lang-btn" onclick="setLang('es', event)">🇪🇸 Español</button>
+  <button class="lang-btn" onclick="setLang('pt', event)">🇵🇹 Português</button>
 </div>
 
 <div class="main">
@@ -505,7 +505,7 @@ const translations = {
   }
 };
 
-function setLang(lang) {
+function setLang(lang, event) {
   const t = translations[lang];
   document.documentElement.setAttribute('dir', t.dir);
   document.getElementById('h-title').textContent = t.hTitle;
