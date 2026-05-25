@@ -387,7 +387,7 @@ const translations = {
     c1Steps: ['Go to impots.gouv.fr and log in to your personal space','Click on "Declare my income"','Check the pre-filled information (salaries, income...)','Add any missing income or deductible expenses','Validate and electronically sign your declaration','Keep your online filing number as proof'],
     c1DocsLabel: '📄 Documents to prepare',
     c1Docs: ['Tax number (on your tax notice or letter from the tax office)','Pay slips or annual statement from your employer','Proof of deductible expenses (childcare, donations, etc.)','Bank account details (RIB) if you expect a refund','CAF statement if you receive benefits'],
-    c1Note: '⚠️ Declaration is mandatory every year, usually between April and June. If it's your first time, you'll need to create an account on impots.gouv.fr with your tax number.',
+    c1Note: '⚠️ Declaration is mandatory every year, usually between April and June. If it\'s your first time, you\'ll need to create an account on impots.gouv.fr with your tax number.',
     c1Btn: '👉 Declare my taxes online',
     c2Title: 'Residence Permit',
     c2Sub: 'ANEF — Application or renewal online',
@@ -397,7 +397,7 @@ const translations = {
     c2Docs: ['Valid passport (all used pages)','Current residence permit (if renewal)','Proof of address less than 3 months old','Recent ID photos (official format)','Supporting documents depending on your situation: employment contract, marriage certificate, etc.','Birth certificate translated by a certified translator if required'],
     c2Note: '⚠️ Submit your application at least 2 months before your current permit expires. Your deposit receipt authorizes you to stay in France while it is being processed.',
     c2Btn: '👉 Access the ANEF portal',
-    c3Title: 'Driver's License',
+    c3Title: "Driver's License",
     c3Sub: 'ANTS — Application, replacement or exchange online',
     c3StepsLabel: '📋 Steps to follow',
     c3Steps: ['Go to the ANTS portal and log in with FranceConnect or create an account','Choose your procedure: first application, replacement (lost/stolen), foreign license exchange','Fill out the online form','Upload your scanned documents','Pay any fees online by credit card','Your license will be sent by post to your home within 2 to 5 weeks'],
@@ -535,6 +535,8 @@ function setLang(lang, event) {
   document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
   event.target.classList.add('active');
 }
+
+document.querySelector('.card-header').nextElementSibling.classList.add('open');
 </script>
 </body>
 </html>
